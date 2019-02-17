@@ -1,0 +1,75 @@
+﻿<Window x:Class="Copy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Copy"
+        mc:Ignorable="d"
+        Title="CopyFilesToUSB" MinHeight="380" MinWidth="440" Height="380" Width="440">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="109*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="186*"/>
+            </Grid.ColumnDefinitions>
+            <!-- <ListBox x:Name="DeviceslistBox" HorizontalAlignment="Left" Margin="50,50,0,150" ItemsSource="{Binding DevicesUsb_list}" SelectedItem="{Binding SelectedLetter, Mode=TwoWay}" Width="100"/>-->
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <TextBox Margin="30,20,0,0" Text="USB:" VerticalAlignment="Bottom" BorderThickness="0"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <ListBox x:Name="DevicesListBox" ItemsSource="{Binding DevicesUsb_list,Mode=TwoWay}" SelectedItem="{Binding SelectedLetter, Mode=TwoWay}" Margin="30,0,10,10">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <CheckBox x:Name="DeviceCheckBox" IsChecked="{Binding IsChecked,Mode=TwoWay}" ClickMode="Press" Content="" Margin="0" />
+                                    <TextBlock Text="{Binding Name}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <TextBox Margin="10,20,0,0" VerticalAlignment="Bottom" Text="FILES:" BorderThickness="0"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <ListBox x:Name="FilesListBox" Margin="10,0,30,10" ItemsSource="{Binding Files_list, Mode=TwoWay}"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button Content="CopyFiles" Margin="25,91,25,0" VerticalAlignment="Top" Height="30" Click="ButtonCopy"/>
+                <Button Content="EjectAll" Margin="25,136,25,0" VerticalAlignment="Top" Height="30" Click="ButtonEject" IsEnabled="False"/>
+                <Button Content="SearchFiles" Margin="25,45,25,0" VerticalAlignment="Top" Height="30" Click="ButtonSearch"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="14*"/>
+                <RowDefinition Height="67*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBox Margin="30,10,0,0" Text="Logger:" VerticalAlignment="Bottom" BorderThickness="0"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBox x:Name="LoggerBox" Margin="30,0,30,10"/>
+            </Grid>
+        </Grid>
+
+
+    </Grid>
+</Window>

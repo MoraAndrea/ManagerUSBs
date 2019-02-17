@@ -1,0 +1,14 @@
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\bin\Release\Copy.exe.config
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\bin\Release\Copy.exe
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\bin\Release\Copy.pdb
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\obj\Release\MainWindow.g.cs
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\obj\Release\App.g.cs
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\obj\Release\Copy_MarkupCompile.cache
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\obj\Release\Copy_MarkupCompile.lref
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\obj\Release\MainWindow.baml
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\obj\Release\Copy.g.resources
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\obj\Release\Copy.Properties.Resources.resources
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\obj\Release\Copy.csproj.GenerateResource.cache
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\obj\Release\Copy.csproj.CoreCompileInputs.cache
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\obj\Release\Copy.exe
+C:\Users\Andre\Documents\Visual Studio 2017\Projects\Copy\Copy\obj\Release\Copy.pdb
